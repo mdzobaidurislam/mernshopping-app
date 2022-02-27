@@ -1,11 +1,11 @@
 const express = require("express");
 const path = require("path");
-const {errorHandler} = require("./middlewares/ErrorMiddlewares")
+const {errorHandler} = require("../middlewares/ErrorMiddlewares")
 const dotenv = require("dotenv");
-const connectDb = require("./config/config");
+const connectDb = require("../config/config");
 
 // routes 
-const Web = require('./routes/web')
+const Web = require('../routes/web')
 
 // dotenv config
 dotenv.config();

@@ -2,14 +2,14 @@
   "name": "shoping-app",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app/server.js",
   "engines": {
     "node": "16.13.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "server": "node server.js",
+    "start": "node app/server.js",
+    "server": "node app/server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "data:import": "node seeder.js",
@@ -30,8 +30,5 @@
     "nodemon": "^2.0.15",
     "stripe": "^8.204.0",
     "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "cors": "^2.8.5"
   }
 }
