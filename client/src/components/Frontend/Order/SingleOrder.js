@@ -29,10 +29,12 @@ const SingleOrder = () => {
 
   useEffect(() => {
     dispatch(getSingleOrder(param.id));
+    if (success) {
+      history(`/order/${param.id}`);
+    }
   }, [dispatch, param.id]);
-  if (success) {
-    history(`/order/${param.id}`);
-  }
+
+  
   return loading ? (
     <Loader />
   ) : error ? (
