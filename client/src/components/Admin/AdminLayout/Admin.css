@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.leftside_menu {
+    width: 260px;
+    z-index: 10;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    background-color: #313a46;
+    padding-top: 70px;
+    -webkit-box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+    box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+}
+/* logo  */
+.left_logo {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    width: 260px;
+    color: #fff;
+    padding: 10px;
+}
+/* site nav */
+.admin_site_nav{
+    padding:0;
+}
+.admin_site_nav li a {
+    color: #8391a2;
+    display: block;
+    padding: 10px 30px;
+    font-size: .99rem;
+    position: relative;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    list-style: none;
+}
+.admin_site_nav li a i {
+    display: inline-block;
+    line-height: 1.0625rem;
+    margin: 0 10px 0 0;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    width: 20px;
+}
+.admin_site_nav li a span {
+    vertical-align: middle;
+}
+
+.content_page {
+    margin-left: 260px;
+    overflow: hidden;
+    padding: 70px 12px 65px;
+    min-height: 100vh;
+}
+
+.navbar_custom {
+    padding: 0 24px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+    box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+    min-height: 70px;
+    position: fixed;
+    left: 260px;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+ /* top navbar  */
+ .admin_dropdown .dropdown-menu {
+    left: -67px;
+    top: 62px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    display: block !important;
+}
+.admin_dropdown .dropdown-menu.show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: .5s;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(49 58 70);
+}
+
+.wrapper .admin_form_control {
+    border: none;
+    height: calc(1.5em + 0.9rem + 2px);
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: #f1f3fa;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+span.admin_search_i {
+    position: absolute;
+    z-index: 9;
+    font-size: 16px;
+    line-height: 38px;
+    left: 22px;
+    top: 18px;
+    color: #6c757d;
+}
+
+.profile_img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+/* content_page  */
+.page_title_box .page_title {
+    font-size: 18px;
+    margin: 0;
+    line-height: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: inherit;
+}
